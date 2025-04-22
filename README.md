@@ -61,8 +61,33 @@ Donde el <"tipo"> puede ser: feat, fix, docs, style, refactor, test, chore, entr
 
 - refactor(ui): simplify dashboard component hierarchy
 
-### 5.1.3. Source Code Style Guide & Conventions.
-### 5.1.4. Software Deployment Configuration.
+### 5.1.3. Source Code Style Guide & Conventions
+
+Para mantener la consistencia del código fuente se adoptaron las siguientes guías y convenciones:
+
+- **HTML/CSS**: [W3 HTML Style Guide](https://www.w3schools.com/html/html5_syntax.asp), [Google HTML/CSS Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- **JavaScript/TypeScript**: [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html), ESLint + Prettier
+- **Java**: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html), aplicado si se emplea Spring Boot
+- **Especificaciones BDD (si aplica)**: [Gherkin Syntax](https://cucumber.io/docs/gherkin/)
+
+Además, se adoptaron las siguientes prácticas:
+- Uso del idioma inglés para nombrar funciones, variables, clases y archivos.
+- Aplicación de principios SOLID y clean code.
+- Separación modular del código, fomentando la reutilización de componentes y funciones puras.
+ 
+### 5.1.4. Software Deployment Configuration
+
+El proceso de despliegue fue automatizado usando plataformas como **Vercel**, **Netlify** o **Railway**. El frontend y la landing page fueron desplegados directamente desde los repositorios de GitHub mediante integración continua (CI). Para el backend se configuró un entorno en Railway o Render.
+
+#### Pasos generales de despliegue:
+
+1. Un push a las ramas `main` o `release/*` activa un proceso de despliegue automático.
+2. Se incluyeron archivos de configuración según la plataforma:
+   - `vercel.json` para Vercel
+   - `netlify.toml` para Netlify
+   - `Dockerfile` en caso de uso de contenedores
+3. Las variables de entorno fueron configuradas directamente en la plataforma correspondiente (por ejemplo, claves de API, bases de datos, credenciales).
+4. Las APIs fueron desplegadas y expuestas mediante HTTPS, y documentadas utilizando herramientas como **Swagger** o **Postman**.
 
 ## 5.2. Landing Page, Services & Applications Implementation.
 ### 5.2.1. Sprint 1
