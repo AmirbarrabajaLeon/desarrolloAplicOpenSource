@@ -91,9 +91,86 @@ El proceso de despliegue fue automatizado usando plataformas como **Vercel**, **
 
 ## 5.2. Landing Page, Services & Applications Implementation.
 ### 5.2.1. Sprint 1
+
+Durante esta etapa se priorizaron funcionalidades esenciales que permiten cubrir el flujo base tanto para usuarios del segmento freelancer como para gerentes. El sprint tuvo una duración estimada de una semana y se trabajó bajo un enfoque ágil tipo Scrum.
+
+El equipo dedicó especial atención a la identificación del Sprint Goal, siguiendo el enfoque propuesto por Scrum.org, basado en outcome, impact, customer y event. El objetivo se redactó con un enfoque en negocio y usuario, en formato SMART:
+
+Sprint 1 Goal:
+
+`Our focus is on delivering a functional user onboarding and task assignment module. We believe it delivers immediate usability and confidence in the product to freelancers and team managers. This will be confirmed when users can register, log in, create projects, and assign tasks successfully.`
+
+Los objetivos principales del Sprint 1 fueron:
+
+- Implementar sistema de registro e inicio de sesión.
+
+- Desarrollar la vista de gestión de proyectos para freelancers.
+
+- Implementar la función de asignación de tareas para gerentes.
+
+- Desplegar una versión funcional de la landing page.
+
+Estas decisiones se basaron en las siguientes User Stories priorizadas:
+
+- E1-US01 Registro de cuenta
+
+- E1-US02 Inicio de sesión
+
+- E1-US03 Gestión de proyectos
+
+- E2-US06 Asignación de tareas
+
 #### 5.2.1.1. Sprint Planning 1.
+
+### Sprint Planning Meeting Summary
+
+| Elemento                         | Detalle                                                                 |
+|----------------------------------|-------------------------------------------------------------------------|
+| **Sprint #**                     | Sprint 1                                                               |
+| **Sprint Planning Background**   | Inicio de desarrollo funcional para usuarios clave                     |
+| **Date**                         | 2025-04-18                                                             |
+| **Time**                         | 05:00 PM                                                               |
+| **Location**                     | Reunión virtual vía Google Meet                                       |
+| **Prepared By**                  | Amir Castro                                                        |
+| **Attendees**                    | Pietro Osores, Joaquin, Sthepano, Carlos                              |
+| **Sprint 0 – Review Summary**    | Se finalizó la planificación general del proyecto y diseño UI inicial. |
+| **Sprint 0 – Retrospective Summary** | Se identificó la necesidad de roles claros y mayor documentación interna. |
+| **Sprint 1 – Goal**              | Tener un MVP funcional que permita login, gestión y asignación básica. Ofrecer funciones de incorporación de usuarios y asignación de tareas utilizables tanto por freelancers como por managers. |
+| **Sprint 1 – Velocity**          | 20 Story Points (estimado)                                             |
+| **Sprint 1 – Sum of Story Points**| 18 Story Points                                                        |
+
 #### 5.2.1.2. Aspect Leaders and Collaborators.
+
+### Leadership and Collaboration Matrix (LACX)
+
+| Team Member         | GitHub Username | Registro/Login | Gestión de Proyectos | Asignación de Tareas | Landing Page | Despliegue | IA/Data Analysis |
+|---------------------|------------------|----------------|----------------------|----------------------|--------------|------------|------------------|
+| Pietro [Apellido]   | [A COMPLETAR]    | C              | L                    | L                    | C            | C          | C                |
+| Amir [Apellido]     | [A COMPLETAR]    | C              | C                    | C                    | C            | L          | L                |
+| Carlos [Apellido]   | [A COMPLETAR]    | C              | C                    | C                    | L            | C          | C                |
+| Stephano [Apellido] | [A COMPLETAR]    | C              | C                    | L                    | L            | C          | C                |
+| Joaquín [Apellido]  | [A COMPLETAR]    | C              | L                    | C                    | C            | C          | L                |
+
+> **L**: Leader (responsable del aspecto)  
+> **C**: Collaborator (colaborador activo)
+
 #### 5.2.1.3. Sprint Backlog 1.
+
+Durante el Sprint 1, el objetivo principal fue construir una base funcional mínima para el sistema, abordando funcionalidades clave como registro, inicio de sesión, gestión de proyectos y asignación de tareas. Se trabajó con una herramienta de control de tareas basada en tableros tipo Kanban (por ejemplo Trello), en donde cada User Story se descompuso en uno o más work-items o tareas técnicas.
+
+### Sprint Backlog - Sprint 1
+
+| User Story ID | User Story Title         | Task ID | Work-Item / Task                               | Description                                                  | Estimation (hrs) | Assigned To      | Status           |
+|---------------|--------------------------|---------|------------------------------------------------|--------------------------------------------------------------|------------------|------------------|------------------|
+| E1-US01       | Registro de cuenta       | TSK-01  | Crear formulario de registro                   | Formulario con campos de email, contraseña y validaciones     | 5                | Carlos           | InProcess        |
+| E1-US01       | Registro de cuenta       | TSK-02  | Integración con Google OAuth                   | Login vía cuenta de Google usando Firebase/Auth0             | 6                | Amir             | To-do            |
+| E1-US02       | Inicio de sesión         | TSK-03  | Backend login endpoint                         | Autenticación y generación de token                          | 4                | Stephano         | Done             |
+| E1-US03       | Gestión de proyectos     | TSK-04  | Vista de panel de proyectos                    | CRUD visual para proyectos                                   | 6                | Joaquín          | InProcess        |
+| E2-US06       | Asignación de tareas     | TSK-05  | API para asignación de tareas                  | Endpoint para asignar tareas a miembros                      | 5                | Stephano         | InProcess        |
+| LDP-01        | Landing Page             | TSK-06  | Maquetación de sección principal               | Header, value proposition y CTA                              | 4                | Carlos           | Done             |
+| DEP-01        | Despliegue               | TSK-07  | Configurar pipeline de deploy en Vercel        | Configurar deploy desde GitHub a Vercel                      | 3                | Amir             | Done             |
+
+
 #### 5.2.1.4. Development Evidence for Sprint Review.
 #### 5.2.1.5. Execution Evidence for Sprint Review.
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
